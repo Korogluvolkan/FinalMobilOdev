@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".GirisActivity">
+
+    <EditText
+        android:id="@+id/kullanici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginBottom="91dp"
+        android:ems="10"
+        android:hint="İsim"
+        android:inputType="textPersonName"
+        android:textColor="#800000"
+        app:layout_constraintBottom_toTopOf="@+id/giris"
+        app:layout_constraintEnd_toStartOf="@+id/sifre"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="189dp"
+        android:layout_marginBottom="91dp"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPersonName"
+        android:textColor="#800000"
+        app:layout_constraintBottom_toTopOf="@+id/giris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kullanici"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/giris"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="297dp"
+        android:onClick="giris"
+        android:text="Giriş"
+        android:textColor="#800000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sifre"
+        app:layout_constraintStart_toStartOf="@+id/kullanici"
+        app:layout_constraintTop_toBottomOf="@+id/sifre" />
+</androidx.constraintlayout.widget.ConstraintLayout>
